@@ -1,4 +1,4 @@
-package com.springboot.homework.entities;
+package com.springboot.homework.model.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

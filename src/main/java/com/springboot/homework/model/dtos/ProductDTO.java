@@ -1,4 +1,4 @@
-package com.springboot.homework.dtos;
+package com.springboot.homework.model.dtos;
 
 import lombok.Builder;
 import lombok.Getter;
