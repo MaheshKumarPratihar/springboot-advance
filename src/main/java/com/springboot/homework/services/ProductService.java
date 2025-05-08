@@ -1,7 +1,7 @@
 package com.springboot.homework.services;
 
-import com.springboot.homework.model.dtos.ProductDTO;
-import com.springboot.homework.model.entities.Product;
+import com.springboot.homework.models.dtos.ProductDTO;
+import com.springboot.homework.models.entities.Product;
 import com.springboot.homework.repositories.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

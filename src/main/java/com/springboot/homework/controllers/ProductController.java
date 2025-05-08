@@ -1,7 +1,7 @@
 package com.springboot.homework.controllers;
 
-import com.springboot.homework.model.dtos.ProductDTO;
-import com.springboot.homework.model.entities.Product;
+import com.springboot.homework.models.dtos.ProductDTO;
+import com.springboot.homework.models.entities.Product;
 import com.springboot.homework.services.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
