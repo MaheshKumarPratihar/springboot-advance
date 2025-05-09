@@ -38,7 +38,12 @@ public class UserService {
     public void saveNewUser(UserDTO userDTO) {
         userDTO.setPassword(passwordEncoder.encode(userDTO.getPassword()));
         User user = this.convertToUser(userDTO);
-        Set<Role> roles = this.roleRepository.findByNameIn(userDTO.getRoles());
+        Set<Role> roles = null;
+        if(userDTO.getRoles() == null){
+            roles = this.roleRepository.findByNameIn(List.of("USER"));
+        }else {
+            roles = this.roleRepository.findByNameIn(userDTO.getRoles());
+        }
         user.setRoles(roles);
         this.userRepository.save(user);
     }

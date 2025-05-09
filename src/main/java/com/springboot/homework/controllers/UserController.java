@@ -32,7 +32,7 @@ public class UserController {
 
         userInDb.setPassword(userDTO.getPassword());
 
-       this.userService.save(userInDb);
+        this.userService.save(userInDb);
 
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
