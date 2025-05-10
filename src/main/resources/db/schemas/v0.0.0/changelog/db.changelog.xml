@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+    <changeSet id="v0.0.0" author="springboot">
+        <tagDatabase tag="v0.0.0"/>
+    </changeSet>
+
+    <!--    Tables-->
+    <include file="../tables/001_create_table_users.sql" relativeToChangelogFile="true"/>
+    <include file="../tables/002_create_table_role.sql" relativeToChangelogFile="true"/>
+    <include file="../tables/003_create_table_user_role.sql" relativeToChangelogFile="true"/>
+
+    <!--    Inserts-->
+    <include file="../inserts/001_populate_role_table.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>
